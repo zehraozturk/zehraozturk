@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Kaydol!</title>
+
+    <style>
+    .giris{
+        border: solid 4px;
+        border-radius: 10%;
+        background-color: #5F9EA0;
+        padding:20px;
+        padding-top: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)      
+   } 
+   a{
+       font-size: small;
+       text-decoration: none;
+   }
+   body{
+       background-image:url("img/wp2215818.jpg");
+   }
+   
+    </style>
+
+<script language="JavaScript">
+    var kontrol = 0;
+    function yaziAc(){
+     if (kontrol == 0){
+      document.getElementById('yaziAlani').style.visibility='visible';
+      document.getElementById('link1').innerHTML='KAYDOL';
+      kontrol = 1;
+    } else {
+      document.getElementById('yaziAlani').style.visibility='hidden';
+      document.getElementById('link1').innerHTML='KAYDOL';
+      kontrol = 0;
+     }
+    }
+    </script>
+    
+</head>
+<body>
+    <div class="giris">
+    <form>
+        Adınız:<br>
+        <input type="text" name="adınız" required placeholder="Ad Girin"><br>
+        Soyadınız:<br>
+        <input type="text" name="soyadınız" required placeholder="Soyadı Girin">
+      </form>
+
+      <form>
+        Kullanıcı Adı:<br>
+        <input type="text" name="Kullanıcıadı" required placeholder="Kullanıcı adı Girin"><br>
+        Kullanıcı Şifresi:<br>
+        <input type="password" name="psw" required placeholder="Şifre Oluşturun">
+      </form>
+
+      <form>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </form>
+
+      <form>
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br>
+        Enter a date after 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02"><br>
+      </form>
+
+      <form>
+        E-mail:
+        <input type="email" name="email" required placeholder="Email Girin">
+      </form>
+      
+      <form>
+        Telefon Numarası:
+        <input type="text" name="numara" required placeholder="Telefon Numarası Girin">
+      </form>
+      <br>
+      
+     
+       </form>
+
+       <form align="center">
+       <a href="#" onClick="yaziAc()" id="link1"><font size="5">KAYDOL</font></a>
+       <div id="yaziAlani" style="width: 50&#37;;  visibility:hidden"><pre><font size="5">HARİKA.ŞİMDİ EĞLENCE ZAMANI!</font></pre></div>
+        
+    </form>
+    </div>
+
+    
+
+</body>
+</html>
